@@ -1,0 +1,108 @@
+
+
+
+ /* 
+ Dark background 
+  background: #FFF7ED; 
+  */
+
+
+/* 
+  Light background
+
+  rgba(255, 247, 237, 0.5);
+ */
+
+
+ @font-face{
+  font-family: "Gilory Light";
+  src: url(../font/Gilroy-Light.otf);
+}
+@font-face{
+  font-family: "Gilory Bold";
+  src: url(../font/Gilroy-ExtraBold.otf);
+}
+
+/* General Styles */
+
+body{
+  padding: 0;
+  font-family: 'Open Sans', sans-serif !important;
+  color: #181441 !important;
+}
+img{
+  object-fit: cover;
+  max-width: 100%;
+}
+h1,h2,h6{
+  font-weight: 600 !important;
+}
+#landing{
+  display: none;
+}
+.display-none{
+  display: block !important;
+}
+
+
+/* Navigation Bar */
+nav,.text,main{
+  padding: 15px 7%;
+}
+#logo{
+  width: 165px;
+}
+
+
+/* Header part (The image, the text) */
+header{
+  /* height: 100vh; */
+  background-color: #f9fdfe;
+}
+header h1{
+  font-size: 50px;
+}
+header button{
+  background-color: #8D53EB !important;
+  border-radius: 8px;
+}
+
+header input{
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+header input:focus{
+  box-shadow: 0 0 13px 9px #c3c3c31f;
+}
+
+
+
+/* Main */
+.categories div{
+  margin: 10px 15px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #FBFBFB;
+  /* padding: 2rem; */
+}
+.categories p{
+  margin: 0;
+}
+
+
+/* Media Queries */
+@media (max-width: 700px){
+  #landing{
+    display: block;
+  }
+  .display-none{
+    display: none !important;
+  }
+  header .d-flex,main section.d-flex{
+    display: block !important;
+  }
+  header .w-50{
+    width: 100% !important;
+  }
+}
