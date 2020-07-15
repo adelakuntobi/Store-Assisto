@@ -13,17 +13,17 @@
   <title>Store Assisto-Home</title>
   <!-- Css sheet -->
   <link rel="stylesheet" href="./assets/css/style.css">
-   <!-- Animations 
+   <!-- Animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"> -->
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="overflow-hidden">
 
   <nav class="bg-white">
     <img id="logo" src="./assets/images/logo.svg">
@@ -31,20 +31,21 @@
 
   <header class="text display-flex">    
     <div class="display-flex">
-      <img class="desktop-none" src="./assets/images/bg-img.png">
-      <div class="m-auto">
+      <img data-aos="zoom-in-up" data-aos-duration="1500" class="desktop-none" src="./assets/images/bg-img.png">
+      <div data-aos="fade-down-right" data-aos-duration="1500" class="m-auto">
         <h1 class="pb-3">Find Products you Like with all Desired Features</h1>
         <p class="pb-5">We are a platform devoted to helping you find all products you desire across all stores within and outside your location</p>
         <b><p class="pt-5 pb-2">Be among the first to know when we launch</p></b>
-        <form class="d-flex">
+        <form name="form1" action="./assets/php/insert.php" method="POST" class="d-flex">
           <div class="input rounded pl-3 pr-0 py-2 bg-white w-75 d-flex mr-4">
             <i class="fas fa-envelope p-2"></i>
-            <input class="w-100" type="text" required placeholder="Email Address">
+            <input name="the-mail" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="emailField" class="w-100" type="email" required  placeholder="example@email.com">
           </div>
-          <button class="p-2 text-white">Subscribe</button>
+          <button onclick="myFunction()" class="p-2 text-white">Subscribe</button>
         </form>
+        <b><i class="pt-2" id="provide">Incorrect email</i></b>
       </div>
-      <img class="w-50 mobile" src="./assets/images/bg-img.png">
+      <img data-aos="fade-down-left" data-aos-duration="1500" class="w-50 mobile" src="./assets/images/bg-img.png">
     </div>
   </header>
 
@@ -87,12 +88,12 @@
 
     
     <section class="mt-5 display-flex">
-      <div class="w-40 text-left my-auto ml-0 mr-auto">
+      <div data-aos="fade-up-right" data-aos-duration="1500" class="w-40 text-left access my-auto ml-0 mr-auto">
         <h2 class="mb-5">We help you access all the products you need</h2>
         <p>Ever moved from shop to shop in search of a specific product and all efforts to find it was futile? We help you identify who has it in store before you leave home</p>
       </div>
       <div class="w3-container w-50">
-        <img src="./assets/images/Group 55.png" style="width:100%;cursor:zoom-in"
+        <img data-aos="fade-up-left" data-aos-duration="1500" src="./assets/images/Group 55.png" style="width:100%;cursor:zoom-in"
         onclick="document.getElementById('modal01').style.display='block'">
       
         <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
@@ -108,7 +109,7 @@
   <section class="location-div mt-5 display-flex">
     <!-- <img class="ml-0 w-40" src="./assets/images/Group 57.png"> -->
     <div class="w3-container w-40">
-      <img src="./assets/images/Group 57.png" style="width:100%;cursor:zoom-in"
+      <img data-aos="fade-up-left" data-aos-duration="1500" src="./assets/images/Group 57.png" style="width:100%;cursor:zoom-in"
       onclick="document.getElementById('modal02').style.display='block'">
     
       <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
@@ -118,7 +119,7 @@
         </div>
       </div>
     </div>
-    <div class="w-40 text-left my-auto mr-0 ml-auto">
+    <div data-aos="fade-up-right" data-aos-duration="1500" class="w-40 text-left my-auto mr-0 ml-auto">
       <h2 class="mb-5">Granting Us Access to your Location helps us Serve you</h2>
       <p>Ever moved from shop to shop in search of a specific product and all efforts to find it was futile? We help you identify who has it in store before you leave home</p>
     </div>
@@ -126,7 +127,7 @@
 
   <section class="py-5 overflow-hidden">
     <div class="w3-container m-auto w-40">
-      <div class="position-relative w-100" style="cursor:zoom-in"
+      <div data-aos="flip-left" data-aos-duration="1500" class="position-relative w-100" style="cursor:zoom-in"
       onclick="document.getElementById('modal03').style.display='block'">
         <img class="eclipse eclipse-1 position-absolute" src="./assets/images/Ellipse 11.png">
         <img class="mx-auto d-block" src="./assets/images/Group 54.png">
@@ -139,7 +140,7 @@
       </div>
     </div>
 
-    <div class="text-center w-50 mx-auto">
+    <div data-aos="flip-left" data-aos-duration="1500" class="text-center w-50 mx-auto">
       <h2 class="mb-4">Granting Us Access to Similar Products, Different Vendors</h2>
       <p>The negative effect of monopoly cannot be overemphasized, that’s why we bring you so many alternatives so you can easily select which suites you best.</p>
     </div>
@@ -148,7 +149,7 @@
   <section class="location-div py-5 mt-5 display-flex">
     <!-- <img class="w-40" src="./assets/images/Group 61.png"> -->
     <div class="w3-container w-40">
-      <img src="./assets/images/Group 61.png" style="width:100%;cursor:zoom-in"
+      <img data-aos="fade-up-right" data-aos-duration="1500" src="./assets/images/Group 61.png" style="width:100%;cursor:zoom-in"
       onclick="document.getElementById('modal04').style.display='block'">
     
       <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
@@ -158,7 +159,7 @@
         </div>
       </div>
     </div>
-    <div class="w-40 text-left my-auto mr-0 ml-auto">
+    <div data-aos="fade-up-left" data-aos-duration="1500" class="w-40 text-left my-auto mr-0 ml-auto">
       <h2 class="mb-5">Search Results with the appropriate item needed</h2>
       <p>Simply search for an item and all stores where it can be found within and outside you location will be made available to you. We also bring to your knowledge other close alternatives.</p>
     </div>
@@ -166,12 +167,12 @@
 
   
   <section class="merchant overflow-hidden py-5 display-flex">
-    <div class="w-40 text-left my-auto ml-0 mr-auto">
+    <div data-aos="zoom-in-down" data-aos-duration="1500" class="w-40 text-left my-auto ml-0 mr-auto">
       <h2 class="mb-5">We help you access all the products you need</h2>
       <p class="mb-5">Ever moved from shop to shop in search of a specific product and all efforts to find it was futile? We help you identify who has it in store before you leave home</p>
     </div>
     <div class="w3-container w-40">
-      <div class="position-relative w-100" style="cursor:zoom-in"
+      <div data-aos="zoom-in-left" data-aos-duration="1500" class="position-relative w-100" style="cursor:zoom-in"
       onclick="document.getElementById('modal05').style.display='block'">
       <img class="mr-0" src="./assets/images/Group 64.png">
       <img class="eclipse eclipse-2 position-absolute" src="./assets/images/Ellipse 13.png">
@@ -190,31 +191,32 @@
   <section class="shop-it p-5 my-5 text-center">
     <h2 class="text-white mb-4">Desire it, Shop it!!</h2>
     <b><p class="text-white pt-5 pb-2">Be among the first to know when we launch</p></b>
-    <form class="d-flex m-auto">
+    <form name="form1" action="./assets/php/insert.php" method="POST" class="d-flex m-auto">
       <div class="rounded input pl-3 pr-0 py-2 bg-white w-50 d-flex ml-auto mr-4">
         <i class="text-black fas fa-envelope p-2"></i>
-        <input class="w-100" type="text" required placeholder="Email Address">
+        <input name="the-mail" class="w-100" type="email" required placeholder="example@email.com">
       </div>
-      <button class="mr-auto ml-0 p-2 text-white">Subscribe</button>
+      <button onclick="myFunction()" class="mr-auto ml-0 p-2 text-white">Subscribe</button>
     </form>
+    <b><i class="pt-2" id="provide">Incorrect email</i></b>
     </section>
 
     <section class="store text-center pb-5">
       <h2 class="mb-5">Why Should You trust StoreAdviso</h2>
-      <div class="row justify-content-center p-0 m-0">
+      <div data-aos="flip-left" data-aos-duration="1500" class="row justify-content-center p-0 m-0">
         <div class="col-lg col-md-5 col-sm-5 col-xm-5 pt-5 pb-4 m-3 rounded">
           <img class="pb-3" src="./assets/images/Group 6.png">
           <p class="m-0">Quality</p>
         </div>
-        <div class="col-lg col-md-5 col-sm-5 col-xm-5 pt-5 pb-4 m-3 rounded">
+        <div data-aos="flip-left" data-aos-duration="1500" class="col-lg col-md-5 col-sm-5 col-xm-5 pt-5 pb-4 m-3 rounded">
           <img class="pb-3" src="./assets/images/Group 71.png">
           <p class="m-0">Convenience</p>
         </div>
-        <div class="col-lg col-md-5 col-sm-5 col-xm-5 pt-5 pb-4 m-3 rounded">
+        <div data-aos="flip-left" data-aos-duration="1500" class="col-lg col-md-5 col-sm-5 col-xm-5 pt-5 pb-4 m-3 rounded">
           <img class="pb-3" src="./assets/images/Group 72.png">
           <p class="m-0">Variety</p>
         </div>
-        <div class="col-lg col-md-5 col-sm-5 col-xm-5 pt-5 pb-4 m-3 rounded">
+        <div data-aos="flip-left" data-aos-duration="1500" class="col-lg col-md-5 col-sm-5 col-xm-5 pt-5 pb-4 m-3 rounded">
           <img class="pb-3" src="./assets/images/Group 73.png">
           <p class="m-0">Security</p>
         </div>
@@ -232,5 +234,10 @@
     <small>© 2020 Ecommerce Community. | ALL RIGHT RESERVED</small>
   </footer>
 
+
+  <script>
+    AOS.init();
+  </script>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
