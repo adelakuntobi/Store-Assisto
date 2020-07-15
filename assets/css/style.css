@@ -1,20 +1,6 @@
+/* Fonts */
 
-
-
- /* 
- Dark background 
-  background: #FFF7ED; 
-  */
-
-
-/* 
-  Light background
-
-  rgba(255, 247, 237, 0.5);
- */
-
-
- @font-face{
+@font-face{
   font-family: "Gilory Light";
   src: url(../font/Gilroy-Light.otf);
 }
@@ -23,86 +9,148 @@
   src: url(../font/Gilroy-ExtraBold.otf);
 }
 
+
+
 /* General Styles */
 
 body{
-  padding: 0;
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: "Gilory Light"!important;
+  font-size: 20px !important;
   color: #181441 !important;
 }
 img{
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
 }
 h1,h2,h6{
-  font-weight: 600 !important;
+  font-family: "Gilory Bold";
 }
-#landing{
+.special-h2{
+  font-family: "Gilory Light"!important;
+}
+.display-flex{
+  display: flex;
+}
+.desktop-none{
   display: none;
 }
-.display-none{
-  display: block !important;
+.mobile{
+  display: block;
+}
+nav,header,main,.merchant{
+  padding: 15px 7%;
 }
 
 
 /* Navigation Bar */
-nav,.text,main{
-  padding: 15px 7%;
-}
+
 #logo{
   width: 165px;
 }
 
-
-/* Header part (The image, the text) */
+/* Landing Text and Image (Header) */
 header{
-  /* height: 100vh; */
   background-color: #f9fdfe;
 }
 header h1{
-  font-size: 50px;
+  font-size: 3rem;
 }
-header button{
+button{
   background-color: #8D53EB !important;
-  border-radius: 8px;
+  border: 0;
+  border-radius: 0.25rem !important;
 }
-
-header input{
+input{
   border: none;
   outline: none;
-  border-radius: 8px;
+  border-radius: 4px;
 }
-header input:focus{
+input:focus{
   box-shadow: 0 0 13px 9px #c3c3c31f;
 }
 
-
-
 /* Main */
 .categories div{
+  width: 1000px;
+  height: 170px;
   margin: 10px 15px;
   text-align: center;
   border-radius: 8px;
   background-color: #FBFBFB;
-  /* padding: 2rem; */
 }
 .categories p{
   margin: 0;
 }
+.w-40{
+  width: 40%;
+}
 
+.location-div{
+  padding: 3rem 7% 0;
+  background-color: #f9fdfe;
+}
+.merchant{
+  overflow: hidden;
+}
 
-/* Media Queries */
+/* Eclipse Section */
+.eclipse{
+  z-index: -1;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.eclipse-1{
+  top: 50%;
+  left: 52%;
+}
+.eclipse-2{
+  top: 17%;
+  left: 78%;
+}
+.eclipse-3{
+  bottom: -21%;
+  left: 25%;
+}
+
+/* Desire it Shop it  */
+.shop-it{
+  background-color: #FEB11C;
+}
+/* Footer */
+footer{
+  background-color: #181441;
+}
+
+/* Media Queries*/
+
 @media (max-width: 700px){
-  #landing{
+  .display-flex,.desktop-none{
     display: block;
   }
-  .display-none{
-    display: none !important;
+  .mobile,.categories div{
+    display: none;
   }
-  header .d-flex,main section.d-flex{
-    display: block !important;
+  .w-40{
+    width: 100%;
   }
-  header .w-50{
-    width: 100% !important;
+  /* Header Section */
+  header .pt-5{
+    padding-top: 0 !important;
   }
+  .categories{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  /* .categories div{
+    width: auto;
+    height: auto;
+    padding: 1rem !important;
+    margin: 5px;
+    text-align: center;
+    background-color: white;
+  } */
 }
+
+
+
+
