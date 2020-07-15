@@ -5,8 +5,12 @@
   src: url(../font/Gilroy-Light.otf);
 }
 @font-face{
-  font-family: "Gilory Bold";
+  font-family: "Gilory Extra Bold";
   src: url(../font/Gilroy-ExtraBold.otf);
+}
+@font-face{
+  font-family: "Gilory Bold";
+  src: url(../font/Gilroy-Medium.woff);
 }
 
 
@@ -22,7 +26,10 @@ img{
   object-fit: contain;
   max-width: 100%;
 }
-h1,h2,h6{
+h1{
+  font-family: 'Gilory Extra Bold';
+}
+h2,.store p{
   font-family: "Gilory Bold";
 }
 .special-h2{
