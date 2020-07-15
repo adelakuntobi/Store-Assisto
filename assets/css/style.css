@@ -37,7 +37,7 @@ h1,h2,h6{
 .mobile{
   display: block;
 }
-nav,header,main,.merchant{
+nav,header,main,.merchant,.store{
   padding: 15px 7%;
 }
 
@@ -92,9 +92,7 @@ input{
   padding: 3rem 7% 0;
   background-color: #f9fdfe;
 }
-.merchant{
-  overflow: hidden;
-}
+
 
 /* Eclipse Section */
 .eclipse{
@@ -119,10 +117,16 @@ input{
 .shop-it{
   background-color: #FEB11C;
 }
+/* Store  */
+.store .row div{
+  background-color: #FBFBFB;
+  width: 150%;
+}
 /* Footer */
 footer{
   background-color: #181441;
 }
+
 
 /* Media Queries*/
 
@@ -135,10 +139,22 @@ footer{
   }
   .w-40{
     width: 100%;
+    padding: 0;
+  }
+  div.w-50{
+    width: 90% !important;
+  }
+
+
+  body{
+    font-size: small !important;
   }
   /* Header Section */
   header .pt-5{
     padding-top: 0 !important;
+  }
+  header h1{
+    font-size: 2.5rem;
   }
   .categories{
     display: grid;
