@@ -37,8 +37,8 @@ h1,h2,h6{
 .mobile{
   display: block;
 }
-nav,header,main,.merchant,.store{
-  padding: 15px 7%;
+nav,header,.access,.merchant,.store{
+  padding: 15px 7% !important;
 }
 
 
@@ -67,6 +67,10 @@ input{
 }
 .input:focus{
   box-shadow: 0 0 13px 9px #c3c3c31f;
+}
+#provide{
+  color: red;
+  display: none;
 }
 
 /* Main */
@@ -143,6 +147,9 @@ footer{
   }
   div.w-50{
     width: 90% !important;
+  }
+  main div.w-50{
+    width: 100% !important;
   }
 
 
