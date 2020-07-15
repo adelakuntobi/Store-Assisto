@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <!-- Font Awesome -->
-  <!-- <script src="https://kit.fontawesome.com/e1936054c3.js" crossorigin="anonymous"></script> -->
+  <script src="https://kit.fontawesome.com/e1936054c3.js" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo.svg">
   <!-- Title -->
@@ -34,8 +36,11 @@
         <h1 class="pb-3">Find Products you Like with all Desired Features</h1>
         <p class="pb-5">We are a platform devoted to helping you find all products you desire across all stores within and outside your location</p>
         <h6 class="pt-5 pb-2">Be among the first to know when we launch</h6>
-        <form>
-          <input class="p-2 w-50" type="text" required placeholder="Email Address">
+        <form class="d-flex">
+          <div class="input pl-3 pr-0 py-2 bg-white w-75">
+            <i class="fas fa-envelope"></i>
+            <input class="w-80" type="text" required placeholder="Email Address">
+          </div>
           <button class="p-2 text-white">Subscribe</button>
         </form>
       </div>
@@ -86,12 +91,33 @@
         <h2 class="mb-5">We help you access all the products you need</h2>
         <p>Ever moved from shop to shop in search of a specific product and all efforts to find it was futile? We help you identify who has it in store before you leave home</p>
       </div>
-      <img class="mr-0 w-50" src="./assets/images/Group 55.png">
+      <div class="w3-container w-40">
+        <img src="./assets/images/Group 55.png" style="width:100%;cursor:zoom-in"
+        onclick="document.getElementById('modal01').style.display='block'">
+      
+        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+          <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+          <div class="w3-modal-content w3-animate-zoom">
+            <img src="./assets/images/iPhone 11 Pro/X - 4.png" class="w-40">
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <section class="location-div my-5 display-flex">
-    <img class="ml-0 w-40" src="./assets/images/Group 57.png">
+    <!-- <img class="ml-0 w-40" src="./assets/images/Group 57.png"> -->
+    <div class="w3-container w-40">
+      <img src="./assets/images/Group 57.png" style="width:100%;cursor:zoom-in"
+      onclick="document.getElementById('modal02').style.display='block'">
+    
+      <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+          <img src="./assets/images/iPhone 11 Pro/X - 5.png" class="d-block m-auto w-40">
+        </div>
+      </div>
+    </div>
     <div class="w-40 text-left my-auto mr-0 ml-auto">
       <h2 class="mb-5">Granting Us Access to your Location helps us Serve you</h2>
       <p>Ever moved from shop to shop in search of a specific product and all efforts to find it was futile? We help you identify who has it in store before you leave home</p>
@@ -99,10 +125,24 @@
   </section>
 
   <section class="py-5">
-    <div class="position-relative">
-      <img class="eclipse eclipse-1 position-absolute" src="./assets/images/Ellipse 11.png">
-      <img class="mx-auto d-block" src="./assets/images/Group 54.png">
+    
+    <div class="w3-container m-auto w-40">
+      <!-- <img src="./assets/images/Group 55.png" style="width:100%;cursor:zoom-in"
+      onclick="document.getElementById('modal01').style.display='block'"> -->
+
+      <div class="position-relative w-100" style="cursor:zoom-in"
+      onclick="document.getElementById('modal03').style.display='block'">
+        <img class="eclipse eclipse-1 position-absolute" src="./assets/images/Ellipse 11.png">
+        <img class="mx-auto d-block" src="./assets/images/Group 54.png">
+      </div>
+      <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+          <img src="./assets/images/iPhone 11 Pro/X - 6.png" class="d-block m-auto w-40">
+        </div>
+      </div>
     </div>
+
     <div class="text-center w-50 mx-auto">
       <h2 class="mb-4">Granting Us Access to Similar Products, Different Vendors</h2>
       <p>The negative effect of monopoly cannot be overemphasized, that’s why we bring you so many alternatives so you can easily select which suites you best.</p>
@@ -110,7 +150,18 @@
   </section>
 
   <section class="location-div my-5 display-flex">
-    <img class="w-40" src="./assets/images/Group 61.png">
+    <!-- <img class="w-40" src="./assets/images/Group 61.png"> -->
+    <div class="w3-container w-40">
+      <img src="./assets/images/Group 61.png" style="width:100%;cursor:zoom-in"
+      onclick="document.getElementById('modal04').style.display='block'">
+    
+      <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+          <img src="./assets/images/iPhone 11 Pro/X - 7.png" class="d-block m-auto w-40">
+        </div>
+      </div>
+    </div>
     <div class="w-40 text-left my-auto mr-0 ml-auto">
       <h2 class="mb-5">Search Results with the appropriate item needed</h2>
       <p>Simply search for an item and all stores where it can be found within and outside you location will be made available to you. We also bring to your knowledge other close alternatives.</p>
@@ -123,18 +174,36 @@
       <h2 class="mb-5">We help you access all the products you need</h2>
       <p>Ever moved from shop to shop in search of a specific product and all efforts to find it was futile? We help you identify who has it in store before you leave home</p>
     </div>
-    <div class="w-40 position-relative">
+    <!-- <div class="w-40 position-relative">
       <img class="mr-0" src="./assets/images/Group 64.png">
       <img class="eclipse eclipse-2 position-absolute" src="./assets/images/Ellipse 13.png">
       <img class="eclipse eclipse-3 position-absolute" src="./assets/images/Ellipse 12.png">
+    </div> -->
+    <div class="w3-container w-40">
+      <div class="position-relative w-100" style="cursor:zoom-in"
+      onclick="document.getElementById('modal05').style.display='block'">
+      <img class="mr-0" src="./assets/images/Group 64.png">
+      <img class="eclipse eclipse-2 position-absolute" src="./assets/images/Ellipse 13.png">
+      <img class="eclipse eclipse-3 position-absolute" src="./assets/images/Ellipse 12.png">
+      </div>
+      <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+          <img src="./assets/images/iPhone 11 Pro/X - 8.png" class="d-block m-auto w-40">
+        </div>
+      </div>
     </div>
+
   </section>
 
   <section class="shop-it py-5 my-5 text-center text-white">
     <h2 class="mb-4">Desire it, Shop it!!</h2>
     <h6 class="pt-5 pb-2">Be among the first to know when we launch</h6>
-    <form >
-      <input class="p-2 w-40 mr-2" type="text" required placeholder="Email Address">
+    <form class="d-flex m-auto">
+      <div class="input pl-3 pr-0 py-2 bg-white w-75">
+        <i class="fas fa-envelope"></i>
+        <input class="w-80" type="text" required placeholder="Email Address">
+      </div>
       <button class="p-2 text-white">Subscribe</button>
     </form>
   </section>

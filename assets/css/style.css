@@ -65,7 +65,7 @@ input{
   outline: none;
   border-radius: 4px;
 }
-input:focus{
+.input:focus{
   box-shadow: 0 0 13px 9px #c3c3c31f;
 }
 
@@ -83,6 +83,9 @@ input:focus{
 }
 .w-40{
   width: 40%;
+}
+.w-80{
+  width: 86%;
 }
 
 .location-div{
