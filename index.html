@@ -22,29 +22,30 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <nav class="bg-white">
-      <img id="logo" src="./assets/images/logo.svg">
-    </nav>
 
-    <div class="text d-flex">
-      <img id="landing" class="w-50" src="./assets/images/bg-img.png">
-      <div class="m-auto pr-4 w-50">
-        <h1>Find Products you Like with all Desired Features</h1>
-        <p class="mb-5">We are a platform devoted to helping you find all products you desire across all stores within and outside your location</p>
-        <h6 class="pt-5 pb-3">Be among the first to know when we launch</h6>
-        <form >
-          <input class="p-2 mr-3 mb-2 w-50" type="text" required placeholder="Email Address">
-          <button class="p-2 btn text-white">Subscribe</button>
+  <nav class="bg-white">
+    <img id="logo" src="./assets/images/logo.svg">
+  </nav>
+
+  <header class="text display-flex">
+    <div class="display-flex">
+      <img class="desktop-none" src="./assets/images/bg-img.png">
+      <div class="m-auto">
+        <h1 class="pb-3">Find Products you Like with all Desired Features</h1>
+        <p class="pb-5">We are a platform devoted to helping you find all products you desire across all stores within and outside your location</p>
+        <h6 class="pt-5 pb-2">Be among the first to know when we launch</h6>
+        <form>
+          <input class="p-2 w-50" type="text" required placeholder="Email Address">
+          <button class="p-2 text-white">Subscribe</button>
         </form>
       </div>
-      <img class="display-none w-50" src="./assets/images/bg-img.png">
+      <img class="w-50 mobile" src="./assets/images/bg-img.png">
     </div>
   </header>
 
-  <main class="text-center my-5">
-    <h2>Get Access to Millions of Items, Search Through Categories</h2>
-    <div class="categories d-flex">
+  <main class="text-center py-5">
+    <h2 class="special-h2">Get Access to Millions of Items, Search Through Categories</h2>
+    <div class="categories display-flex desktop-none">
       <div class="pt-5 pb-3 px-3">
         <img class="pb-4" src="./assets/images/Group.png">
         <p>Home & Office</p>
@@ -59,7 +60,7 @@
       </div>
       <div class="pt-5 pb-3 px-3">
         <img class="pb-4" src="./assets/images/Vector (1).png">
-        <p>baby Products</p>
+        <p>Baby Products</p>
       </div>
       <div class="pt-5 pb-3 px-3">
         <img class="pb-4" src="./assets/images/Vector (2).png">
@@ -79,14 +80,73 @@
       </div>
     </div>
 
-    <section class="my-5 d-flex">
-      <div class="text-left m-auto">
+    
+    <section class="my-5 display-flex">
+      <div class="w-40 text-left my-auto ml-0 mr-auto">
         <h2 class="mb-5">We help you access all the products you need</h2>
         <p>Ever moved from shop to shop in search of a specific product and all efforts to find it was futile? We help you identify who has it in store before you leave home</p>
       </div>
-      <img src="./assets/images/Group 55.png">
+      <img class="mr-0 w-50" src="./assets/images/Group 55.png">
     </section>
   </main>
+
+  <section class="location-div my-5 display-flex">
+    <img class="ml-0 w-40" src="./assets/images/Group 57.png">
+    <div class="w-40 text-left my-auto mr-0 ml-auto">
+      <h2 class="mb-5">Granting Us Access to your Location helps us Serve you</h2>
+      <p>Ever moved from shop to shop in search of a specific product and all efforts to find it was futile? We help you identify who has it in store before you leave home</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="position-relative">
+      <img class="eclipse eclipse-1 position-absolute" src="./assets/images/Ellipse 11.png">
+      <img class="mx-auto d-block" src="./assets/images/Group 54.png">
+    </div>
+    <div class="text-center w-50 mx-auto">
+      <h2 class="mb-4">Granting Us Access to Similar Products, Different Vendors</h2>
+      <p>The negative effect of monopoly cannot be overemphasized, that’s why we bring you so many alternatives so you can easily select which suites you best.</p>
+    </div>
+  </section>
+
+  <section class="location-div my-5 display-flex">
+    <img class="w-40" src="./assets/images/Group 61.png">
+    <div class="w-40 text-left my-auto mr-0 ml-auto">
+      <h2 class="mb-5">Search Results with the appropriate item needed</h2>
+      <p>Simply search for an item and all stores where it can be found within and outside you location will be made available to you. We also bring to your knowledge other close alternatives.</p>
+    </div>
+  </section>
+
+  
+  <section class="merchant py-5 display-flex">
+    <div class="w-40 text-left my-auto ml-0 mr-auto">
+      <h2 class="mb-5">We help you access all the products you need</h2>
+      <p>Ever moved from shop to shop in search of a specific product and all efforts to find it was futile? We help you identify who has it in store before you leave home</p>
+    </div>
+    <div class="w-40 position-relative">
+      <img class="mr-0" src="./assets/images/Group 64.png">
+      <img class="eclipse eclipse-2 position-absolute" src="./assets/images/Ellipse 13.png">
+      <img class="eclipse eclipse-3 position-absolute" src="./assets/images/Ellipse 12.png">
+    </div>
+  </section>
+
+  <section class="shop-it py-5 my-5 text-center text-white">
+    <h2 class="mb-4">Desire it, Shop it!!</h2>
+    <h6 class="pt-5 pb-2">Be among the first to know when we launch</h6>
+    <form >
+      <input class="p-2 w-40 mr-2" type="text" required placeholder="Email Address">
+      <button class="p-2 text-white">Subscribe</button>
+    </form>
+  </section>
+
+  <footer class="text-center text-white py-4">
+    <section class="pt-5 mt-5 mb-3">
+      <i class="mx-1 fab fa-facebook-square fa-2x"></i>
+      <i class="mx-1 fab fa-instagram-square fa-2x"></i>
+      <i class="mx-1 fab fa-twitter-square fa-2x"></i>
+    </section>
+    <small>© 2020 Ecommerce Community. | ALL RIGHT RESERVED</small>
+  </footer>
 
 </body>
 </html>
